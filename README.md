@@ -17,8 +17,8 @@ docker run --rm -d -p 27017:27017 --name mongo percona/percona-server-mongodb:6.
 
 Start the following services:
  - AUTH
- - AUTH_LogIN_API
- - AUTH_LOGIN_sTUB
+ - AUTH_LOGIN_API
+ - AUTH_LOGIN_STUB
 
 ```bash
 sm2 --start SDEC_INTERNAL_FRONTEND
