@@ -20,6 +20,7 @@ import org.openqa.selenium.{By, JavascriptExecutor}
 import org.scalatest.matchers.should.Matchers
 import uk.gov.hmrc.selenium.component.PageObject
 import uk.gov.hmrc.selenium.webdriver.Driver
+
 import scala.jdk.CollectionConverters.*
 
 trait BasePage extends Matchers with PageObject {

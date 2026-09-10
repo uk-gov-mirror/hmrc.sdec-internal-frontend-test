@@ -16,18 +16,18 @@
 
 package uk.gov.hmrc.ui.pages
 
-import org.openqa.selenium.{By, WebDriver, WebElement}
 import org.openqa.selenium.support.ui.{ExpectedConditions, WebDriverWait}
+import org.openqa.selenium.{By, WebElement}
 import uk.gov.hmrc.ui.driver.BrowserDriver
 
 import java.time.Duration
 
 object WorkspacePage extends BrowserDriver with BasePage {
 
-  val workspacePageHeading: By      = By.xpath("//*[@id=\"workspace\"]/h2")
-  val workspaceLinkClick: By        = By.xpath("//*[@id=\"tab_workspace\"]")
+  val workspacePageHeading:      By = By.xpath("//*[@id=\"workspace\"]/h2")
+  val workspaceLinkClick:        By = By.xpath("//*[@id=\"tab_workspace\"]")
   val createThreadButtonLocator: By = By.cssSelector("#workspace > div > div > button")
-  val insufficientRolePage: By      = By.xpath("//*[@id=\"main-content\"]/div/div/h1")
+  val insufficientRolePage:      By = By.xpath("//*[@id=\"main-content\"]/div/div/h1")
 
   private val wait = new WebDriverWait(driver, Duration.ofSeconds(10))
 

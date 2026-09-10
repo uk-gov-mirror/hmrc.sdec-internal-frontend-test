@@ -16,25 +16,24 @@
 
 package uk.gov.hmrc.ui.pages
 
-import org.openqa.selenium.{By, JavascriptExecutor, WebDriver, WebElement}
-import org.openqa.selenium.support.ui.WebDriverWait
-import uk.gov.hmrc.ui.conf.TestConfiguration
 import org.openqa.selenium.support.ui.{ExpectedConditions, WebDriverWait}
+import org.openqa.selenium.{By, JavascriptExecutor, WebElement}
+import uk.gov.hmrc.ui.conf.TestConfiguration
 import uk.gov.hmrc.ui.driver.BrowserDriver
 
 import java.time.Duration
 
 object AuthLoginPage extends BrowserDriver with BasePage {
 
-  val url: String             = TestConfiguration.url("sdec-internal-frontend")
-  val pidName: By             = By.id("pid")
-  val givenName: By           = By.id("usersGivenName")
-  val surName: By             = By.id("usersSurname")
-  val emailAddress: By        = By.id("emailAddress")
-  val clickStatusSuccess: By  = By.xpath("//input[@id='success'][@name='status']")
-  val clickSignatureValid: By = By.xpath("//input[@id='valid'][@name='signature']")
-  val rolesTextarea: By       = By.xpath("//textarea[@id='roles'][@name='roles']")
-  val submitButtonClick: By   = By.xpath("//button[@type='submit' and @id='continue-button']")
+  val url:                 String = TestConfiguration.url("sdec-internal-frontend")
+  val pidName:             By     = By.id("pid")
+  val givenName:           By     = By.id("usersGivenName")
+  val surName:             By     = By.id("usersSurname")
+  val emailAddress:        By     = By.id("emailAddress")
+  val clickStatusSuccess:  By     = By.xpath("//input[@id='success'][@name='status']")
+  val clickSignatureValid: By     = By.xpath("//input[@id='valid'][@name='signature']")
+  val rolesTextarea:       By     = By.xpath("//textarea[@id='roles'][@name='roles']")
+  val submitButtonClick:   By     = By.xpath("//button[@type='submit' and @id='continue-button']")
 
   private val wait = new WebDriverWait(driver, Duration.ofSeconds(10))
 
